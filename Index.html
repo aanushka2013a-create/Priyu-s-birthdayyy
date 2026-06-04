@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Priyu!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffe6f2 0%, #ffccd5 100%);
+            color: #4a4a4a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            padding: 15px;
+        }
+        /* Slide Container */
+        .slide-container {
+            background: white;
+            width: 100%;
+            max-width: 400px;
+            height: 550px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 30px 20px;
+            text-align: center;
+            border: 4px solid #fff;
+        }
+        /* Individual Slide Settings */
+        .slide {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        /* Design Elements */
+        .emoji {
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        h2 {
+            color: #d81b60;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #6a6a6a;
+        }
+        /* Navigation Buttons */
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 15px;
+        }
+        button {
+            background: #d81b60;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(216, 27, 96, 0.3);
+            transition: 0.2s;
+        }
+        button:disabled {
+            background: #e0e0e0;
+            color: #a6a6a6;
+            box-shadow: none;
+            cursor: not-allowed;
+        }
+        /* Slide Counter Indicator */
+        .counter {
+            font-size: 0.9rem;
+            color: #b1b1b1;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        /* Theme Overrides for specific slides */
+        .slide-gold h2 { color: #b38600; }
+        .slide-purple h2 { color: #7b1fa2; }
+    </style>
+</head>
+<body>
+
+    <div class="slide-container">
+        
+        <!-- SLIDE 1 -->
+        <div class="slide active">
+            <div class="emoji">✨</div>
+            <h2>Hey Priyu!</h2>
+            <p>Welcome to your secret digital birthday card. I built this website entirely on my phone just for you! Tap next to begin your journey... 👉</p>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="slide">
+            <div class="emoji">🎂</div>
+            <h2>Happy Birthday!</h2>
+            <p>Wishing the absolute happiest of birthdays to my favorite human being. May this year bring you endless laughs and massive success!</p>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="slide slide-purple">
+            <div class="emoji">👑</div>
+            <h2>To My Best Friend</h2>
+            <p>Out of all the people in the world, you are the one who understands my crazy thoughts perfectly. I'm so lucky to have you in my corner.</p>
+        </div>
+
+        <!-- SLIDE 4 -->
+        <div class="slide">
+            <div class="emoji">📸</div>
+            <h2>Our Core Memories</h2>
+            <p>From random late-night texting to crying-laughing over absolute nonsense, every single moment spent with you is a favorite memory of mine.</p>
+        </div>
+
+        <!-- SLIDE 5 -->
+        <div class="slide slide-gold">
+            <div class="emoji">🌟</div>
+            <h2>You Are Golden</h2>
+            <p>Never forget how incredibly smart, talented, and beautiful you are, Priyu. You light up every room you walk into.</p>
+        </div>
+
+        <!-- SLIDE 6 -->
+        <div class="slide">
+            <div class="emoji">🍿</div>
+            <h2>Partner in Crime</h2>
+            <p>Who else would agree to my wildest plans or listen to me vent for hours? Thank you for being the ultimate partner-in-crime.</p>
+        </div>
+
+        <!-- SLIDE 7 -->
+        <div class="slide slide-purple">
+            <div class="emoji">🧠</div>
+            <h2>Mind Reader</h2>
+            <p>Seriously, we have reached that level of friendship where just a single glance across a room tells us exactly what the other person is thinking.</p>
+        </div>
+
+        <!-- SLIDE 8 -->
+        <div class="slide">
+            <div class="emoji">🍕</div>
+            <h2>The Foodie to my Vibe</h2>
+            <p>Here's a reminder that we need to go on way more food dates this year and try all those places we always talk about!</p>
+        </div>
+
+        <!-- SLIDE 9 -->
+        <div class="slide">
+            <div class="emoji">🛡️</div>
+            <h2>Always Safe</h2>
+            <p>Thank you for creating a safe space where I can completely be myself without any judgment. You're my rock.</p>
+        </div>
+
+        <!-- SLIDE 10 -->
+        <div class="slide slide-gold">
+            <div class="emoji">🎈</div>
+            <h2>Time to Celebrate</h2>
+            <p>Today is entirely about you! I hope you get treated like the royalty you are, eat way too much cake, and get everything you wished for.</p>
+        </div>
+
+        <!-- SLIDE 11 -->
+        <div class="slide">
+            <div class="emoji">💌</div>
+            <h2>My Secret Promise</h2>
+            <p>No matter where life takes us or how busy things get, I will always be just one phone call away. You'll never have to face anything alone.</p>
+        </div>
+
+        <!-- SLIDE 12 -->
+        <div class="slide slide-purple">
+            <div class="emoji">🚀</div>
+            <h2>To the Future</h2>
+            <p>I can't wait to watch you crush all your goals this year. I'll be right here cheering for you louder than anyone else!</p>
+        </div>
+
+        <!-- SLIDE 13 -->
+        <div class="slide">
+            <div class="emoji">😂</div>
+            <h2>Never Stop Being Weird</h2>
+            <p>Stay exactly as wonderful, hilarious, and wonderfully weird as you are. The world needs exactly your kind of energy.</p>
+        </div>
+
+        <!-- SLIDE 14 -->
+        <div class="slide slide-gold">
+            <div class="emoji">🧁</div>
+            <h2>Make a Wish!</h2>
+            <p>Right now, take a second to close your eyes, think of the biggest wish you have for this year, and blow out the imaginary candles...</p>
+        </div>
+
+        <!-- SLIDE 15 -->
+        <div class="slide">
+            <div class="emoji">💖</div>
+            <h2>Happy Birthday, Priyu!</h2>
+            <p>Cheers to another year of friendship, inside jokes, and memory-making. Love you to the moon and back, bestie! 🥳🎉</p>
+        </div>
+
+        <!-- Navigation System -->
+        <div class="navigation">
+            <button id="prevBtn" onclick="changeSlide(-1)" disabled>Back</button>
+            <div class="counter" id="slideCounter">1 / 15</div>
+            <button id="nextBtn" onclick="changeSlide(1)">Next</button>
+        </div>
+
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slideCounter');
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide += direction;
+            slides[currentSlide].classList.add('active');
+
+            // Update page text counter
+            slideCounter.innerText = (currentSlide + 1) + " / " + slides.length;
+
+            // Handle button disabled states
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+        }
+    </script>
+</body>
+</html>
